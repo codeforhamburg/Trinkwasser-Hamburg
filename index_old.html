@@ -1,41 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<link rel="stylesheet" href="map/css/leaflet.css" />
-	<link rel="stylesheet" type="text/css" href="map/css/qgis2web.css">
-	<link rel="stylesheet" href="map/css/label.css" />
-	<link rel="stylesheet" href="map/css/MarkerCluster.css" />
-	<link rel="stylesheet" href="map/css/MarkerCluster.Default.css" />
-	<link rel="stylesheet" href="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.css" />
-	<script src="map/js/leaflet.js"></script>
-	<script src="map/js/OSMBuildings-Leaflet.js"></script>
-	<script src="map/js/leaflet-hash.js"></script>
-	<script src="map/js/label.js"></script>
-	<script src="map/js/Autolinker.min.js"></script>
-	<script src="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.js"></script>
-	<script src="map/js/leaflet.markercluster.js"></script>
-	<style>
-		html, body, #map {
-			width: 100%;
-			height: 100%;
-			padding: 0;
-			margin: 0;
-		}
-	</style>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Was steckt in meinem Leitungswasser? (Hamburg)</title>
-<meta name="description" content="Weißt du eigentlich, wie gut das Trinkwasser an deinem Wohnort ist? Hier kannst du es herausfinden - für die Hansestadt Hamburg" />
+<title>Was steckt in meinem Leitungswasser? (Münster)</title>
+<meta name="description" content="Weißt du eigentlich, wie gut das Trinkwasser an deinem Wohnort ist? Hier kannst du es herausfinden - für Münster in Westfalen" />
 
-<!-- build:css css/tw.min.css -->
-<link href="css/bootstrap-cyborg.css" rel="stylesheet" />
-<link href="css/main.css" rel="stylesheet" />
-<!-- endbuild -->
+<link rel="stylesheet" href="css/bf52aa68.tw.min.css">
 
 <!--[if gte IE 9]>
 	<style type="text/css">
@@ -48,22 +22,15 @@
 <body class="bg-gradient">
 	<div class="container">
 		<div class="pull-right hidden-xs">
-			<h1 style="display:none"><small>Hamburg</small></h1>
+			<h1 style="display:none"><small>Münster</small></h1>
 		</div>
 		<h1 style="display:none">Was steckt in meinem Leitungswasser?</h1>
 
-		<div class="welcome-text">
-			Diese Webseite erlaubt eine einfache Übersicht der Trinkwasserwerte für Hamburg. Es ist außerdem ein Vergleich mit Mineralwässern möglich. Die Daten und einige der Texte hierfür stammen von HAMBURG WASSER. Zum starten einfach eines der untenstehenden Wasserwerke auswählen.
-		</div>
+		<div class="welcome-text">Diese Webseite erlaubt eine einfache Übersicht der Trinkwasserwerte für Münster. Es ist außerdem ein Vergleich mit Mineralwässern möglich. Die Daten und einige der Texte hierfür stammen von den Seiten der Stadtwerke Münster. Zum starten einfach eines der untenstehenden Wasserwerke auswählen.</div>
 
 		<div class="choose-location">
 			<ul class="nav nav-tabs responsive" id="city-tabs">
 			</ul>
-		</div>
-
-		<div class="welcome-text" style="height: 500px !important">
-			<div id="map" style="height: 500px !important">
-			</div>
 		</div>
 
 		<div class="results" style="display: none;">
@@ -548,12 +515,6 @@
 					<h4 class="modal-title">Mitwirkende</h4>
 				</div>
 				<div class="modal-body">
-					<p><strong>Anpassung für Hamburg</strong></p>
-					<p>
-						Tom Friedel (<a target="_blank" href="https://twitter.com/tomthats">@tomthats</a>) für <a target="_blank" href="http://codeformuenster.org/">Code for Hamburg</a>
-					</p>
-					<p>Bei <a target="_blank" href="http://http://codeforhamburg.org/">Code for Hamburg</a> treffen sich regelmäßig Menschen, um gemeinsam Open Data Projekte umzusetzen - wir würden uns über deinen Besuch freuen!</p>
-					<br />
           <p><strong>Anpassung für Münster</strong></p>
 					<p>
           Gerald Pape (<a target="_blank" href="https://twitter.com/ubergesundheit">@ubergesundheit</a>) für <a target="_blank" href="http://codeformuenster.org/">Code for Münster</a>
@@ -583,12 +544,6 @@
 						Alexander Walther (<a target="_blank" href="https://twitter.com/alexplus_de">@alexplus_de</a>)<br />
 						Tom Görner<br />
 						Gerd Hoffmann
-					</p>
-
-					<p><strong>Karten-Daten</strong></p>
-					<p>
-						Freie und Hansestadt Hamburg, <br />
-						Landesbetrieb Geoinformation und Vermessung
 					</p>
 				</div>
 			</div>
@@ -629,294 +584,29 @@
 				</div>
 				<div class="modal-body">
 					<p>Wir freuen uns über Feedback:</p>
-					<p>E-Mail Adresse: <a href="mailto:lab@codeforhamburg.org">lab@codeforhamburg.org</a> - Vielen Dank!</p>
+					<p>E-Mail Adresse: <a href="mailto:muenster@codefor.de">muenster@codefor.de</a> - Vielen Dank!</p>
 					<p>Bitte beachten Sie, dass für keine der hier aufgeführten Daten Gewähr genommen wird. Es kann vereinzelt zu fehlerhaften Angaben kommen. Haben Sie einen Fehler entdeckt? Schreiben Sie uns!</p>
-					<p>Oder sind Sie Mitarbeiter von HAMBURG WASSER und möchten Ihre Daten eintragen? Schicken Sie uns einfach Ihre Daten per E-Mail.</p>
+					<p>Oder sind Sie Mitarbeiter der Stadtwerke Münster und möchten Ihre Daten eintragen? Schicken Sie uns einfach Ihre Daten per E-Mail.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- build:js js/tw.min.js -->
-	<script src="lib/jquery.js"></script>
-	<script src="lib/bootstrap.js"></script>
-	<script src="lib/d3.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/utils.js"></script>
-	<script src="data/locations.js"></script>
-	<script src="data/zones.js"></script>
-	<script src="data/mineralwaesser.js"></script>
-	<script src="js/gauge.js"></script>
-	<script src="js/comparison.js"></script>
-	<!-- endbuild -->
+	<script src="js/48d16054.tw.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			tw.init();
 		});
 	</script>
-
-
-	<script src="map/data/json_ortsteile0.js"></script>
 	<script>
-		var highlightLayer;
-		function highlightFeature(e) {
-			highlightLayer = e.target;
-
-			if (e.target.feature.geometry.type === 'LineString') {
-				highlightLayer.setStyle({
-					color: '#ffff00',
-				});
-			} else {
-				highlightLayer.setStyle({
-					fillColor: '#ffff00',
-					fillOpacity: 1
-				});
-			}
-		}
-		L.ImageOverlay.include({
-			getBounds: function () {
-				return this._bounds;
-			}
-		});
-		var map = L.map('map', {
-			zoomControl:true, maxZoom:28, minZoom:1
-		}).fitBounds([[53.3551690662,9.61751656973],[53.7673845907,10.6498343595]]);
-		var hash = new L.Hash(map);
-		map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
-		var feature_group = new L.featureGroup([]);
-		var bounds_group = new L.featureGroup([]);
-		var raster_group = new L.LayerGroup([]);
-		var initialOrder = new Array();
-		var layerOrder = new Array();
-		function stackLayers() {
-			for (index = 0; index < initialOrder.length; index++) {
-				map.removeLayer(initialOrder[index]);
-				map.addLayer(initialOrder[index]);
-			}
-			map.setMaxBounds(map.getBounds());
-		}
-		function restackLayers() {
-			for (index = 0; index < layerOrder.length; index++) {
-				layerOrder[index].bringToFront();
-			}
-		}
-		layerControl = L.control.layers({},{},{collapsed:false});
-		function pop_ortsteile0(feature, layer) {
-			layer.on({
-				mouseout: function(e) {
-					layer.setStyle(doStyleortsteile0(feature));
-
-				},
-				mouseover: highlightFeature,
-			});
-			var popupContent = '<table><tr><td colspan="2">' + (feature.properties['gml_id'] !== null ? Autolinker.link(String(feature.properties['gml_id'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['OBJECTID'] !== null ? Autolinker.link(String(feature.properties['OBJECTID'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['Bezirk_Nam'] !== null ? Autolinker.link(String(feature.properties['Bezirk_Nam'])) : '') + '</td></tr><tr><td colspan="2"><strong>Stadtteil</strong><br />' + (feature.properties['Stadtteil'] !== null ? Autolinker.link(String(feature.properties['Stadtteil'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['Ortsteilnu'] !== null ? Autolinker.link(String(feature.properties['Ortsteilnu'])) : '') + '</td></tr><tr><td colspan="2"><strong>Bezirk</strong><br />' + (feature.properties['Bezirk'] !== null ? Autolinker.link(String(feature.properties['Bezirk'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['SHP_Length'] !== null ? Autolinker.link(String(feature.properties['SHP_Length'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['SHP_Area'] !== null ? Autolinker.link(String(feature.properties['SHP_Area'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['count'] !== null ? Autolinker.link(String(feature.properties['count'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['sum'] !== null ? Autolinker.link(String(feature.properties['sum'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['mean'] !== null ? Autolinker.link(String(feature.properties['mean'])) : '') + '</td></tr><tr><td colspan="2"><strong>Wasserwerk</strong><br />' + (feature.properties['Wasserwerk'] !== null ? Autolinker.link(String(feature.properties['Wasserwerk'])) : '') + '</td></tr></table>';
-			layer.bindPopup(popupContent);
-		}
-
-		function doStyleortsteile0(feature) {
-			switch (feature.properties['Wasserwerk']) {
-				default:
-					return {
-						weight: '1.04',
-						fillColor: '#85e6a8',
-						color: '#000000',
-						dashArray: '',
-						lineCap: 'butt',
-						lineJoin: 'miter',
-						opacity: '1.0',
-						fillOpacity: '1.0',
-					};
-					break;
-
-				case 'Bauersberg':
-					return {
-						weight: '1.04',
-						fillColor: '#de6f84',
-						color: '#000000',
-						dashArray: '',
-						lineCap: 'butt',
-						lineJoin: 'miter',
-						opacity: '1.0',
-						fillOpacity: '1.0',
-					};
-					break;
-
-				case 'Bostelbek, Neugraben, Süderelbe':
-					return {
-						weight: '1.04',
-						fillColor: '#9f66d1',
-						color: '#000000',
-						dashArray: '',
-						lineCap: 'butt',
-						lineJoin: 'miter',
-						opacity: '1.0',
-						fillOpacity: '1.0',
-					};
-					break;
-
-				case 'Großhansdorf':
-					return {
-						weight: '1.04',
-						fillColor: '#e09c15',
-						color: '#000000',
-						dashArray: '',
-						lineCap: 'butt',
-						lineJoin: 'miter',
-						opacity: '1.0',
-						fillOpacity: '1.0',
-					};
-					break;
-
-				case 'Haseldorfer':
-					return {
-						weight: '1.04',
-						fillColor: '#bccd25',
-						color: '#000000',
-						dashArray: '',
-						lineCap: 'butt',
-						lineJoin: 'miter',
-						opacity: '1.0',
-						fillOpacity: '1.0',
-					};
-					break;
-
-				case 'Havestude, Rotherbaum':
-					return {
-						weight: '1.04',
-						fillColor: '#7bd776',
-						color: '#000000',
-						dashArray: '',
-						lineCap: 'butt',
-						lineJoin: 'miter',
-						opacity: '1.0',
-						fillOpacity: '1.0',
-					};
-					break;
-
-				case 'Langenhorn':
-					return {
-						weight: '1.04',
-						fillColor: '#e688eb',
-						color: '#000000',
-						dashArray: '',
-						lineCap: 'butt',
-						lineJoin: 'miter',
-						opacity: '1.0',
-						fillOpacity: '1.0',
-					};
-					break;
-
-				case 'Neugraben':
-					return {
-						weight: '1.04',
-						fillColor: '#9fe161',
-						color: '#000000',
-						dashArray: '',
-						lineCap: 'butt',
-						lineJoin: 'miter',
-						opacity: '1.0',
-						fillOpacity: '1.0',
-					};
-					break;
-
-				case 'Nordheide':
-					return {
-						weight: '1.04',
-						fillColor: '#4634e8',
-						color: '#000000',
-						dashArray: '',
-						lineCap: 'butt',
-						lineJoin: 'miter',
-						opacity: '1.0',
-						fillOpacity: '1.0',
-					};
-					break;
-
-				case 'Rothenburgsort':
-					return {
-						weight: '1.04',
-						fillColor: '#da5128',
-						color: '#000000',
-						dashArray: '',
-						lineCap: 'butt',
-						lineJoin: 'miter',
-						opacity: '1.0',
-						fillOpacity: '1.0',
-					};
-					break;
-
-				case 'Schnelsen':
-					return {
-						weight: '1.04',
-						fillColor: '#2ab1dd',
-						color: '#000000',
-						dashArray: '',
-						lineCap: 'butt',
-						lineJoin: 'miter',
-						opacity: '1.0',
-						fillOpacity: '1.0',
-					};
-					break;
-
-				case 'Stellingen':
-					return {
-						weight: '1.04',
-						fillColor: '#5b88e1',
-						color: '#000000',
-						dashArray: '',
-						lineCap: 'butt',
-						lineJoin: 'miter',
-						opacity: '1.0',
-						fillOpacity: '1.0',
-					};
-					break;
-
-				case 'Süderelbmarsch':
-					return {
-						weight: '1.04',
-						fillColor: '#d26bab',
-						color: '#000000',
-						dashArray: '',
-						lineCap: 'butt',
-						lineJoin: 'miter',
-						opacity: '1.0',
-						fillOpacity: '1.0',
-					};
-					break;
-
-				case 'Walddörfer':
-					return {
-						weight: '1.04',
-						fillColor: '#75ddc8',
-						color: '#000000',
-						dashArray: '',
-						lineCap: 'butt',
-						lineJoin: 'miter',
-						opacity: '1.0',
-						fillOpacity: '1.0',
-					};
-					break;
-
-			}
-		}
-		var json_ortsteile0JSON = new L.geoJson(json_ortsteile0, {
-			onEachFeature: pop_ortsteile0,
-			style: doStyleortsteile0
-		});
-		layerOrder[layerOrder.length] = json_ortsteile0JSON;
-		bounds_group.addLayer(json_ortsteile0JSON);
-		initialOrder[initialOrder.length] = json_ortsteile0JSON;
-		feature_group.addLayer(json_ortsteile0JSON);
-		raster_group.addTo(map);
-		feature_group.addTo(map);
-		var osmGeocoder = new L.Control.OSMGeocoder({
-			collapsed: false,
-			position: 'topright',
-			text: 'Search',
-		});
-		osmGeocoder.addTo(map);
-		stackLayers();
-		map.on('overlayadd', restackLayers);
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-47404284-2', 'auto');
+	  ga('send', 'pageview');
+	
 	</script>
 </body>
 </html>
