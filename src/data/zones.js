@@ -11,7 +11,7 @@ tw.data.zones = {
     "hardness":"14.5",
     "carbonate_hardness":"8.1",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "Das Wasserwerk Baursberg wurde 1859 in Betrieb genommen. Es war das erste Wasserwerk mit Filtration. Bis 1960 wurde auf dem Baursberg auch Elbwasser aufbereitet. Seitdem wird für die Trinkwasserproduktion nur noch Grundwasser genutzt. Die elf Brunnen des Wasserwerks Baursberg fördern in den Brunnenfassungen Rissen und Falkenstein Grundwasser aus Tiefen zwischen 40 und 320 Metern. Mitte der achtziger Jahre wurde die Filteranlage im 1915 errichteten Gebäude modernisiert und die 18 Langsamfilterbecken stillgelegt. Die Aufbereitung des Rohwassers erfolgt durch Zugabe von reinem Sauerstoff und nachfolgende Filtration. Zur Werksanlage gehören sechs Schnellfilter, fünf Trinkwasserbehälter mit einem Gesamtvolumen von insgesamt 55.000 Kubikmetern sowie fünf Reinwasserpumpen, die im täglichen Dauerbetrieb 12.000 Kubikmeter ins Versorgungsnetz abgeben können. Der Baursberg ist aufgrund seiner Höhe von ca. 92 m üNN ein idealer Standort für Speicherbehälter. Das Trinkwasser kann ohne Pumpen zwischenschalten zu müssen im freien Gefälle zu den Verbrauchern fließen. Die Verbraucher, die in der Nähe des Wasserwerks Baursberg wohnen, werden über einen Hochbehälter (Hochzone) versorgt. Das Versorgungsgebiet des Werkes reicht in West-Ost-Richtung von Blankenese bis Othmarschen und nördlich über die Landesgrenzen hinweg in den Schenefelder Raum. Seit 1990 sind die Förderbrunnen durch ein Wasserschutzgebiet geschützt. Seine Größe beträgt heute zehn Quadratkilometer."
   },
   "Grundwasserwerk Bergedorf": {
     "natrium":"44",
@@ -24,7 +24,7 @@ tw.data.zones = {
     "hardness":"9.2",
     "carbonate_hardness":"9.1",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "Das seit 1899 bestehende und 1982 modernisierte Grundwasserwerk Bergedorf versorgt den Raum Reinbek, Wentorf und einen Teil von Bergedorf mit Trinkwasser. Fünf Tiefbrunnen fördern Grundwasser aus Tiefen von 53 bis 112 Metern in die Aufbereitungsanlage des Werkes. Hier durchläuft das Rohwasser einen Oxidator mit Sauerstoffanreicherung und sechs geschlossene Druck-Schnellfilter, ehe es in zwei Trinkwasserbehälter mit einem Gesamtvolumen von 1.400 Kubikmetern gelangt. Sieben Kreiselpumpen fördern täglich rund 7.000 Kubikmeter Trinkwasser in das Versorgungsgebiet."
   },
   "Grundwasserwerk Bostelbek": {
     "natrium":"10",
@@ -37,7 +37,7 @@ tw.data.zones = {
     "hardness":"8.2",
     "carbonate_hardness":"5.9",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "Das 1892 errichtete Grundwasserwerk Bostelbek gewinnt sein Rohwasser aus sechs Brunnen mit einer Tiefe von 76 bis 300 Metern sowie aus vier ca. 25 Meter tiefen Flachbrunnen und einer Sickergalerie. Das so geförderte Grundwasser wird zunächst mit Sauerstoff angereichert und in sechs geschlossenen Druckfiltern zu Trinkwasser aufbereitet. Anschließend wird es in fünf Hochbehältern mit einem Gesamtvolumen von 20.000 Kubikmetern kurzzeitig in Heimfeld gespeichert – von dort aus gelangt es zu den Verbrauchern in Teilbereichen von Heimfeld, Harburg und Wilhelmsburg. Die Förderbrunnen des Werkes Bostelbek werden von dem am 1. April 1994 festgesetzten 47,2 Quadratkilometer großen Wasserschutzgebiet Süderelbmarsch/Harburger Berge geschützt."
   },
   "Grundwasserwerk Glinde": {
     "natrium":"11",
@@ -50,7 +50,7 @@ tw.data.zones = {
     "hardness":"9.6",
     "carbonate_hardness":"6.9",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "Das 1966 fertig gestellte Grundwasserwerk Glinde versorgt Randbereiche der Hamburger Stadtteile Jenfeld, Billstedt und Lohbrügge sowie die östlichen Randgemeinden mit Trinkwasser. 14 Brunnen fördern Grundwasser aus Tiefen zwischen 80 und 212 Metern in die Aufbereitungsanlagen des Werkes. Das Wasser gelangt dort zunächst in einen Belüftungsturm und Reaktionsbehälter. Anschließend durchströmt es offene Quarzsand-Schnellfilter. So aufbereitet fließt es in zwei Trinkwasserbehälter mit einem Volumen von je 6.000 Kubikmetern. Von hier aus können acht Kreiselpumpen im Dauerbetrieb täglich 23.000 Kubikmeter ins Versorgungsnetz abgeben. 1985 wurde für das Wasserwerk ein 35,8 Quadratkilometer großes Wasserschutzgebiet ausgewiesen."
   },
   "Grundwasserwerk Großensee": {
     "natrium":"9",
@@ -63,7 +63,7 @@ tw.data.zones = {
     "hardness":"7.2",
     "carbonate_hardness":"7.1",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "Das 1892 in Betrieb genommene Wasserwerk Großensee wurde in den Jahren 1984/85 erneuert. Bis in die 30er Jahre des letzten Jahrhunderts wurde für die Aufbereitung ausschließlich Wasser aus dem Großensee genutzt. 1934 erweiterte man die Werkskapazität mit einer neuen Grundwasseraufbereitungsanlage. Seit 1988 wird zur Trinkwasseraufbereitung nur noch Grundwasser verwendet. Die Wasserwerk erhält sein Rohwasser aus zehn Brunnen mit Tiefen von 162 bis 228 Metern. Zur Werksanlage gehören eine geschlossene Kaskadenbelüftung, vier ebenfalls geschlossene Druck-Schnellfilter, eine Nachentsäuerungsstufe sowie zwei Trinkwasserbehälter mit einem Gesamtvolumen von 6.000 Kubikmetern. Das Werk versorgt den Hamburger Stadtteil Rahlstedt sowie die östlichen Randgemeinden Hamburgs zwischen Ahrensburg, Siek und Brunsbek täglich mit etwa 13.500 Kubikmetern Trinkwasser."
   },
   "Grundwasserwerk Großhansdorf": {
     "natrium":"11",
@@ -76,7 +76,7 @@ tw.data.zones = {
     "hardness":"12.5",
     "carbonate_hardness":"10.8",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "Das seit 1933 im Dienst stehende Grundwasserwerk Großhansdorf wurde 1974 um eine neue Anlage erweitert. Insgesamt 20 Brunnen fördern das Rohwasser aus Tiefen von 21 bis 174 Metern: teils in die offenen Filter des alten Werksteils, teils in die geschlossenen Filter des neuen Werksteils. Das Trinkwasser gelangt in zwei Trinkwasserbehälter mit einem Gesamtvolumen von 12.000 Kubikmetern. Mit einer täglichen Dauerleistung bis zu 28.000 Kubikmetern werden der Hamburger Stadtteil Rahlstedt sowie die Stadt Ahrensburg und die angrenzenden Randgemeinden im Kreis Stormarn beliefert."
   },
   "Grundwasserwerk Haseldorfer Marsch": {
     "natrium":"33",
@@ -89,7 +89,7 @@ tw.data.zones = {
     "hardness":"10.4",
     "carbonate_hardness":"6.6",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "Das 1960 in Betrieb genommene Grundwasserwerk Haseldorfer Marsch gewinnt sein Rohwasser aus drei Horizontalfilterbrunnen, zwei Flach- und acht Tiefbrunnen. Das aus Tiefen von 17 bis 107 Metern geförderte Grundwasser fließt zur Aufbereitung in zwei unterschiedliche Anlagen: die Flockung (2/3 des Rohwassers) und den Verdüsungsturm (1/3  des Rohwassers). In der Flockungsanlage wird die Härte reduziert und ein großer Teil des Eisens abgeschieden. Nach der Mischkammer, in der die Wässer aus der Flockungsanlage und dem Verdüsungsturm zusammenkommen, wird technischer Sauerstoff zugegeben. Im Anschluss erfolgt die Filtration in acht offenen Quarzsandfiltern, in den acht Unterfiltern findet eine Nachentsäuerung statt. Das aufbereitete Wasser wird in zwei Reinwasserbehältern mit einem Gesamtvolumen von 13.000 Kubikmetern gespeichert. Die Trinkwasserabgabe erfolgt über vier Reinwasserpumpen, die eine tägliche Dauerabgabe des Werkes von 15.000 Kubikmetern gewährleisten. Seit 1999 ist für das Fördergebiet Haseldorfer Marsch ein Wasserschutzgebiet von rund 52 Quadratkilometern Fläche ausgewiesen."
   },
   "Grundwasserwerk Langenhorn": {
     "natrium":"90",
@@ -102,7 +102,7 @@ tw.data.zones = {
     "hardness":"10.4",
     "carbonate_hardness":"10.4",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "Als erster Wasserwerksneubau nach dem zweiten Weltkrieg ging die Anlage Langenhorn 1952 ans Netz. Fünf Flachbrunnen und sechs Tiefbrunnen gewinnen hier das Rohwasser aus Tiefen zwischen 14 und 430 Metern. Im Werksgebäude wird das Rohwasser in zwei Rieslerkammern belüftet und über sechs offene Schnellfilter zu Trinkwasser aufbereitet. Drei Kreiselpumpen transportieren das kostbare Nass aus drei Trinkwasserbehältern mit einem Gesamtvolumen von 14.000 Kubikmetern mit einer täglichen Dauerleistung bis zu 14.500 Kubikmetern in die Hamburger Stadtteile Langenhorn, Fuhlsbüttel und Niendorf sowie nach Norderstedt. Seit dem 1. April 2000 ist für das Einzugsgebiet der Brunnen in Langenhorn ein Wasserschutzgebiet von rund 10,8 Quadratkilometern ausgewiesen. Es reicht bis nach Schleswig-Holstein."
   },
   "Grundwasserwerk Lohbrügge": {
     "natrium":"28",
@@ -115,7 +115,7 @@ tw.data.zones = {
     "hardness":"10.2",
     "carbonate_hardness":"10.1",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "Das 1991 neu gebaute Grundwasserwerk Lohbrügge versorgt den Raum Lohbrügge mit Trinkwasser. Es bezieht sein Rohwasser aus fünf Brunnen mit Tiefen zwischen 68 und 125 Metern. Die Wasseraufbereitung erfolgt durch die Anreicherung mit Sauerstoff und Filtration über vier geschlossene Druck-Schnellfilter. Zur Werksanlage gehören ferner ein Trinkwasserbehälter mit 600 Kubikmeter Volumen sowie drei Reinwasser-Kreiselpumpen mit einer Tagesdauerleistung von 5.500 Kubikmetern."
   },
   "Grundwasserwerk Neugraben": {
     "natrium":"9",
@@ -128,7 +128,7 @@ tw.data.zones = {
     "hardness":"5.3",
     "carbonate_hardness":"5.1",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "Das im Jahr 1908 in Betrieb genommene Grundwasserwerk Neugraben arbeitet seit November 2002 mit einer komplett erneuerten Aufbereitungstechnik, die in einem Neubau untergebracht wurde. Es fördert sein Rohwasser aus neun Brunnen mit Tiefen zwischen 82 und 311 Metern. Das mit Sauerstoff angereicherte Wasser durchströmt zunächst vier geschlossene Druck-Schnellfilter und verteilt sich dann in zwei unterirdische Trinkwasserbehälter mit einem Gesamtvolumen von 3.000 Kubikmetern. Von hier aus werden täglich 15.000 Kubikmeter Trinkwasser in die Hamburger Stadtteile Neugraben, Fischbek und Hausbruch geliefert. Die Förderbrunnen des Werkes Neugraben werden von dem am 1. April 1994 festgesetzten, 47,2 Quadratkilometer großen Wasserschutzgebiet Süderelbmarsch/Harburger Berge geschützt."
   },
   "Grundwasserwerk Nordheide": {
     "natrium":"9",
@@ -141,7 +141,7 @@ tw.data.zones = {
     "hardness":"5.9",
     "carbonate_hardness":"5.5",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "Das 1982 fertig gestellte Grundwasserwerk Nordheide fördert aus rund 33 Brunnen Grundwasser mit Tiefen von 52 bis 326 Metern. Das mit Sauerstoff angereicherte Rohwasser durchströmt geschlossene Druckfilter, ehe es in zwei Trinkwasserbehälter mit einem Gesamtvolumen von 5.000 Kubikmetern gelangt. Das Trinkwasser fließt durch eine 28 Kilometer lange Transportleitung im freien Gefälle zum Hochbehälter Ehestorf. Von dort aus wird es durch einen Düker unter der Elbe hindurch in das Versorgungsgebiet Altona und Ottensen transportiert. Direkt aus dem Hochbehälter Ehestorf werden hochgelegene Gebiete von Harburg und Wilstorf versorgt. Die mittlere Tagesabgabe des Werkes liegt bei 50.000 Kubikmetern. Die Ausweisung eines Wasserschutzgebietes ist geplant."
   },
   "Grundwasserwerk Schnelsen": {
     "natrium":"46",
@@ -154,7 +154,7 @@ tw.data.zones = {
     "hardness":"14.2",
     "carbonate_hardness":"10.2",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "Im Jahr 1931 erschloss die Gemeinde Schnelsen die Brunnenfassungen und baute das jetzige Schnelsener Wasserwerk. Im Jahre 1990 wurde das Werk von Grund auf erneuert. Es fördert sein Rohwasser aus 14 Brunnen mit Tiefen zwischen 31 und 205 Metern. Im Werk wird das Wasser mit Sauerstoff angereichert und fließt dann durch vier geschlossene Schnellfilter. Aus den drei Trinkwasserbehältern mit einem Gesamtvolumen von 13.000 Kubikmetern transportieren drei Pumpen täglich 15.000 Kubikmeter in die Hamburger Stadtteile Eidelstedt, Niendorf, Groß Borstel und Schnelsen sowie in einige Nachbargemeinden."
   },
   "Grundwasserwerk Stellingen": {
     "natrium":"36",
@@ -167,7 +167,7 @@ tw.data.zones = {
     "hardness":"17.1",
     "carbonate_hardness":"9.4",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "In den Jahren 1930 bis 1936 erschloss die Stadt Altona die Brunnenfassungen \"Stellingen\" und \"Eidelstedt\" und baute das jetzige Stellinger Wasserwerk direkt neben dem alten Werk Stellingen-Langenfelde aus dem Jahre 1909. Das Ende der 1980er Jahre grundsanierte Wasserwerk Stellingen fördert aus zehn Brunnen mit Tiefen zwischen 40 und 150 Metern Grundwasser in die offene Verdüsung des Werkes. Von dort fließt das belüftete Rohwasser zunächst auf sechs geschlossene Filter und anschließend in die Reinwasserbehälter mit einem Gesamtvolumen von 15.000 Kubikmetern. Um den Bedarf in dem Versorgungsgebiet decken zu können, werden zurzeit ca. 8.000 Kubikmeter Trinkwasser am Tag aus der Versorgungszone Nord in die Behälter zugespeist. Fünf Reinwasserpumpen mit einer Tagesabgabe von 15.000 Kubikmetern werden entsprechend dem Verbrauch geschaltet und transportieren das Trinkwasser nach Stellingen und in die direkt angrenzenden Gebiete."
   },
 
   "Grundwasserwerk Süderelbmarsch": {
@@ -181,7 +181,7 @@ tw.data.zones = {
     "hardness":"6.9",
     "carbonate_hardness":"5.9",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "Das Grundwasserwerk Süderelbmarsch versorgt seit 1956 den Bereich der Marsch südlich der Elbe von Cranz und Neuenfelde im Westen bis Neuland im Osten mit Trinkwasser. Zwei Horizontalfilterbrunnen, neun Tief- und vier Flachbrunnen fördern Grundwasser aus Tiefen zwischen 17 und 363 Metern in die Aufbereitungsanlage des Werkes. Zur Belüftung und nachfolgenden Filtration stehen drei Verdüsungskammern und zwölf offene Filter sowie vier geschlossene Druckfilter zur Verfügung.Anschließend durchläuft das Wasser eine Nachentsäuerungsanlage, ehe es in drei Reinwasserbehälter mit einem Gesamtvolumen von 10.000 Kubikmetern gelangt. Von dort aus transportieren fünf Pumpen täglich rund 38.000 Kubikmeter Trinkwasser in das Versorgungsnetz. Das am 1. April 1994 festgesetzte 47,2 Quadratkilometer große Wasserschutzgebiet Süderelbmarsch/Harburger Berge schützt auch die Förderbrunnen des Grundwasserwerkes Süderelbmarsch. Ebenfalls in dieses Schutzgebiet einbezogen sind die Brunnen der Grundwasserwerke Bostelbek und Neugraben."
   },
   "Grundwasserwerk Walddörfer": {
     "natrium":"16",
@@ -194,7 +194,7 @@ tw.data.zones = {
     "hardness":"8.9",
     "carbonate_hardness":"8.9",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "Seit 1965 versorgt das in Volksdorf gelegene Grundwasserwerk Walddörfer die Hamburger Stadtteile nördlich von Winterhude und Wandsbek bis Bergstedt und Lemsahl-Mellingstedt im Norden mit Trinkwasser. 19 Tiefbrunnen fördern Grundwasser aus Tiefen zwischen 145 und 370 Metern. Im Werk wird das Rohwasser mit Sauerstoff angereichert, zu den zwölf geschlossenen Druck-Schnellfiltern geleitet und nach der Filterpassage mittels Kaskaden nachbelüftet. Danach fließt es in die drei Trinkwasserbehälter mit einem Gesamtvolumen von 30.000 Kubikmetern. Vier Kreiselpumpen gewährleisten eine tägliche Abgabe von 38.000 Kubikmetern Trinkwasser als Dauerleistung und eine Spitzenleistung von 60.000 Kubikmetern pro Tag."
   },
   "Hauptpumpwerk Rothenburgsort": {
     "natrium":"20",
@@ -207,7 +207,7 @@ tw.data.zones = {
     "hardness":"11.5",
     "carbonate_hardness":"9.4",
     "year":2015,
-    "description": "Beschreibung Beschreibung Beschreibung"
+    "description": "In den Reinwasserbehältern des Hauptpumpwerks Rothenburgsort vermischen sich das Trinkwasser aus dem Wasserwerk Curslack und aus dem Wasserwerk Billbrook. Hier wird es in das HAMBURG WASSER-Versorgungsnetz eingespeist und versorgt das Zentrum und den gesamten östlichen Teil Hamburgs von Winterhude bis Altengamme. In der zentralen Leitwarte in Rothenburgsort werden die aus Sicherheitsgründen doppelt vorhandenen Pumpen vor Ort gesteuert sowie die gespeicherten Wassermengen geregelt. Prinzipiell lassen sich von dort aus sämtliche Wasserwerke von HAMBURG WASSER überwachen und fernsteuern. Mit Prozessrechnern und ausgefeilten Programmen werden Wasserbedarfsprognosen und Modellrechnungen für den Betrieb der Wasserwerke erstellt. Die Leitwarte ist zugleich Zentralstelle für alle Störmeldungen und allgemeine Anliegen aus dem Versorgungsgebiet. Die riesigen unterirdischen Reinwasserbehälter in Rothenburgsort haben ein Speichervolumen von rund 100.000 Kubikmetern. Sie wirken als Puffer zwischen den Förderbrunnen und Aufbereitungsanlagen, die möglichst gleichmäßig betrieben werden müssen, und dem ständig schwankenden Wasserbedarf."
   }
 };
 
