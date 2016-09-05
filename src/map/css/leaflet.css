@@ -157,6 +157,9 @@
 	visibility: hidden;
 	}
 
+.leaflet-zoom-animated {
+	background-color: #dae9f4;
+}
 
 /* cursors */
 

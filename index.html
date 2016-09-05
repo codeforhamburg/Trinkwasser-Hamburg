@@ -709,14 +709,12 @@
 				},
 				mouseover: highlightFeature,
 			});
+
 			//var popupContent = '<table><tr><td colspan="2">' + (feature.properties['gml_id'] !== null ? Autolinker.link(String(feature.properties['gml_id'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['OBJECTID'] !== null ? Autolinker.link(String(feature.properties['OBJECTID'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['Bezirk_Nam'] !== null ? Autolinker.link(String(feature.properties['Bezirk_Nam'])) : '') + '</td></tr><tr><td colspan="2"><strong>Stadtteil</strong><br />' + (feature.properties['Stadtteil'] !== null ? Autolinker.link(String(feature.properties['Stadtteil'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['Ortsteilnu'] !== null ? Autolinker.link(String(feature.properties['Ortsteilnu'])) : '') + '</td></tr><tr><td colspan="2"><strong>Bezirk</strong><br />' + (feature.properties['Bezirk'] !== null ? Autolinker.link(String(feature.properties['Bezirk'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['SHP_Length'] !== null ? Autolinker.link(String(feature.properties['SHP_Length'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['SHP_Area'] !== null ? Autolinker.link(String(feature.properties['SHP_Area'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['count'] !== null ? Autolinker.link(String(feature.properties['count'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['sum'] !== null ? Autolinker.link(String(feature.properties['sum'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['mean'] !== null ? Autolinker.link(String(feature.properties['mean'])) : '') + '</td></tr><tr><td colspan="2"><strong>Wasserwerk</strong><br />' + (feature.properties['Wasserwerk'] !== null ? Autolinker.link(String(feature.properties['Wasserwerk'])) : '') + '</td></tr></table>';
-
-
 
 			var popupContent = '<h4 style="color:black;">Bezirk ' + (feature.properties['Bezirk_Nam'] !== null ? Autolinker.link(String(feature.properties['Bezirk_Nam'])) : '') + '</h4>' +
 								'<p>Stadtteil: ' + (feature.properties['Stadtteil'] !== null ? Autolinker.link(String(feature.properties['Stadtteil'])) : '') + '</p>' +
 								'<p>Waserwerk: ' + (feature.properties['Wasserwerk'] !== null ? Autolinker.link(String(feature.properties['Wasserwerk'])) : '') + '</p>';
-
 
 			layer.bindPopup(popupContent);
 		}
@@ -726,7 +724,7 @@
 				default:
 					return {
 						weight: '1.04',
-						fillColor: '#85e6a8',
+						fillColor: '#8dd3c7',
 						color: '#000000',
 						dashArray: '',
 						lineCap: 'butt',
@@ -739,7 +737,7 @@
 				case 'Bauersberg':
 					return {
 						weight: '1.04',
-						fillColor: '#de6f84',
+						fillColor: '#ffffb3',
 						color: '#000000',
 						dashArray: '',
 						lineCap: 'butt',
@@ -752,7 +750,7 @@
 				case 'Bostelbek, Neugraben, Süderelbe':
 					return {
 						weight: '1.04',
-						fillColor: '#9f66d1',
+						fillColor: '#bebaba',
 						color: '#000000',
 						dashArray: '',
 						lineCap: 'butt',
@@ -765,7 +763,7 @@
 				case 'Großhansdorf':
 					return {
 						weight: '1.04',
-						fillColor: '#e09c15',
+						fillColor: '#fb8072',
 						color: '#000000',
 						dashArray: '',
 						lineCap: 'butt',
@@ -778,7 +776,7 @@
 				case 'Haseldorfer':
 					return {
 						weight: '1.04',
-						fillColor: '#bccd25',
+						fillColor: '#80b1d3',
 						color: '#000000',
 						dashArray: '',
 						lineCap: 'butt',
@@ -791,7 +789,7 @@
 				case 'Havestude, Rotherbaum':
 					return {
 						weight: '1.04',
-						fillColor: '#7bd776',
+						fillColor: '#fbd462',
 						color: '#000000',
 						dashArray: '',
 						lineCap: 'butt',
@@ -804,7 +802,7 @@
 				case 'Langenhorn':
 					return {
 						weight: '1.04',
-						fillColor: '#e688eb',
+						fillColor: '#b3de69',
 						color: '#000000',
 						dashArray: '',
 						lineCap: 'butt',
@@ -817,7 +815,7 @@
 				case 'Neugraben':
 					return {
 						weight: '1.04',
-						fillColor: '#9fe161',
+						fillColor: '#fccde5',
 						color: '#000000',
 						dashArray: '',
 						lineCap: 'butt',
@@ -830,7 +828,7 @@
 				case 'Nordheide':
 					return {
 						weight: '1.04',
-						fillColor: '#4634e8',
+						fillColor: '#FF9922',
 						color: '#000000',
 						dashArray: '',
 						lineCap: 'butt',
@@ -843,7 +841,7 @@
 				case 'Rothenburgsort':
 					return {
 						weight: '1.04',
-						fillColor: '#da5128',
+						fillColor: 'green',
 						color: '#000000',
 						dashArray: '',
 						lineCap: 'butt',
@@ -856,7 +854,7 @@
 				case 'Schnelsen':
 					return {
 						weight: '1.04',
-						fillColor: '#2ab1dd',
+						fillColor: 'yellow',
 						color: '#000000',
 						dashArray: '',
 						lineCap: 'butt',
@@ -869,7 +867,7 @@
 				case 'Stellingen':
 					return {
 						weight: '1.04',
-						fillColor: '#5b88e1',
+						fillColor: 'red',
 						color: '#000000',
 						dashArray: '',
 						lineCap: 'butt',
@@ -882,7 +880,7 @@
 				case 'Süderelbmarsch':
 					return {
 						weight: '1.04',
-						fillColor: '#d26bab',
+						fillColor: 'blue',
 						color: '#000000',
 						dashArray: '',
 						lineCap: 'butt',
@@ -895,7 +893,7 @@
 				case 'Walddörfer':
 					return {
 						weight: '1.04',
-						fillColor: '#75ddc8',
+						fillColor: 'orange',
 						color: '#000000',
 						dashArray: '',
 						lineCap: 'butt',
