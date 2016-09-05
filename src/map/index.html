@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css" />
+        <link rel="stylesheet" type="text/css" href="css/qgis2web.css">
+        <link rel="stylesheet" href="css/label.css" />
+        <link rel="stylesheet" href="css/MarkerCluster.css" />
+        <link rel="stylesheet" href="css/MarkerCluster.Default.css" />
+        <link rel="stylesheet" href="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.css" />
+        <script src="js/leaflet.js"></script>
+        <script src="js/OSMBuildings-Leaflet.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/label.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.js"></script>
+        <script src="js/leaflet.markercluster.js"></script>
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="data/json_ortsteile0.js"></script>
+        <script>
+        var highlightLayer;
+        function highlightFeature(e) {
+            highlightLayer = e.target;
+
+            if (e.target.feature.geometry.type === 'LineString') {
+              highlightLayer.setStyle({
+                color: '#ffff00',
+              });
+            } else {
+              highlightLayer.setStyle({
+                fillColor: '#ffff00',
+                fillOpacity: 1
+              });
+            }
+        }
+        L.ImageOverlay.include({
+            getBounds: function () {
+                return this._bounds;
+            }
+        });
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[53.3551690662,9.61751656973],[53.7673845907,10.6498343595]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
+        var feature_group = new L.featureGroup([]);
+        var bounds_group = new L.featureGroup([]);
+        var raster_group = new L.LayerGroup([]);
+        var initialOrder = new Array();
+        var layerOrder = new Array();
+        function stackLayers() {
+            for (index = 0; index < initialOrder.length; index++) {
+                map.removeLayer(initialOrder[index]);
+                map.addLayer(initialOrder[index]);
+            }
+            map.setMaxBounds(map.getBounds());
+        }
+        function restackLayers() {
+            for (index = 0; index < layerOrder.length; index++) {
+                layerOrder[index].bringToFront();
+            }
+        }
+        layerControl = L.control.layers({},{},{collapsed:false});
+        function pop_ortsteile0(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    layer.setStyle(doStyleortsteile0(feature));
+
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table><tr><td colspan="2">' + (feature.properties['gml_id'] !== null ? Autolinker.link(String(feature.properties['gml_id'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['OBJECTID'] !== null ? Autolinker.link(String(feature.properties['OBJECTID'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['Bezirk_Nam'] !== null ? Autolinker.link(String(feature.properties['Bezirk_Nam'])) : '') + '</td></tr><tr><td colspan="2"><strong>Stadtteil</strong><br />' + (feature.properties['Stadtteil'] !== null ? Autolinker.link(String(feature.properties['Stadtteil'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['Ortsteilnu'] !== null ? Autolinker.link(String(feature.properties['Ortsteilnu'])) : '') + '</td></tr><tr><td colspan="2"><strong>Bezirk</strong><br />' + (feature.properties['Bezirk'] !== null ? Autolinker.link(String(feature.properties['Bezirk'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['SHP_Length'] !== null ? Autolinker.link(String(feature.properties['SHP_Length'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['SHP_Area'] !== null ? Autolinker.link(String(feature.properties['SHP_Area'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['count'] !== null ? Autolinker.link(String(feature.properties['count'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['sum'] !== null ? Autolinker.link(String(feature.properties['sum'])) : '') + '</td></tr><tr><td colspan="2">' + (feature.properties['mean'] !== null ? Autolinker.link(String(feature.properties['mean'])) : '') + '</td></tr><tr><td colspan="2"><strong>Wasserwerk</strong><br />' + (feature.properties['Wasserwerk'] !== null ? Autolinker.link(String(feature.properties['Wasserwerk'])) : '') + '</td></tr></table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function doStyleortsteile0(feature) {
+			switch (feature.properties['Wasserwerk']) {
+                default:
+                    return {
+                    weight: '1.04',
+                    fillColor: '#85e6a8',
+                    color: '#000000',
+                    dashArray: '',
+                    lineCap: 'butt',
+                    lineJoin: 'miter',
+                    opacity: '1.0',
+                    fillOpacity: '1.0',
+                };
+                break;
+
+                case 'Bauersberg':
+                    return {
+                    weight: '1.04',
+                    fillColor: '#de6f84',
+                    color: '#000000',
+                    dashArray: '',
+                    lineCap: 'butt',
+                    lineJoin: 'miter',
+                    opacity: '1.0',
+                    fillOpacity: '1.0',
+                };
+                break;
+
+                case 'Bostelbek, Neugraben, Süderelbe':
+                    return {
+                    weight: '1.04',
+                    fillColor: '#9f66d1',
+                    color: '#000000',
+                    dashArray: '',
+                    lineCap: 'butt',
+                    lineJoin: 'miter',
+                    opacity: '1.0',
+                    fillOpacity: '1.0',
+                };
+                break;
+
+                case 'Großhansdorf':
+                    return {
+                    weight: '1.04',
+                    fillColor: '#e09c15',
+                    color: '#000000',
+                    dashArray: '',
+                    lineCap: 'butt',
+                    lineJoin: 'miter',
+                    opacity: '1.0',
+                    fillOpacity: '1.0',
+                };
+                break;
+
+                case 'Haseldorfer':
+                    return {
+                    weight: '1.04',
+                    fillColor: '#bccd25',
+                    color: '#000000',
+                    dashArray: '',
+                    lineCap: 'butt',
+                    lineJoin: 'miter',
+                    opacity: '1.0',
+                    fillOpacity: '1.0',
+                };
+                break;
+
+                case 'Havestude, Rotherbaum':
+                    return {
+                    weight: '1.04',
+                    fillColor: '#7bd776',
+                    color: '#000000',
+                    dashArray: '',
+                    lineCap: 'butt',
+                    lineJoin: 'miter',
+                    opacity: '1.0',
+                    fillOpacity: '1.0',
+                };
+                break;
+
+                case 'Langenhorn':
+                    return {
+                    weight: '1.04',
+                    fillColor: '#e688eb',
+                    color: '#000000',
+                    dashArray: '',
+                    lineCap: 'butt',
+                    lineJoin: 'miter',
+                    opacity: '1.0',
+                    fillOpacity: '1.0',
+                };
+                break;
+
+                case 'Neugraben':
+                    return {
+                    weight: '1.04',
+                    fillColor: '#9fe161',
+                    color: '#000000',
+                    dashArray: '',
+                    lineCap: 'butt',
+                    lineJoin: 'miter',
+                    opacity: '1.0',
+                    fillOpacity: '1.0',
+                };
+                break;
+
+                case 'Nordheide':
+                    return {
+                    weight: '1.04',
+                    fillColor: '#4634e8',
+                    color: '#000000',
+                    dashArray: '',
+                    lineCap: 'butt',
+                    lineJoin: 'miter',
+                    opacity: '1.0',
+                    fillOpacity: '1.0',
+                };
+                break;
+
+                case 'Rothenburgsort':
+                    return {
+                    weight: '1.04',
+                    fillColor: '#da5128',
+                    color: '#000000',
+                    dashArray: '',
+                    lineCap: 'butt',
+                    lineJoin: 'miter',
+                    opacity: '1.0',
+                    fillOpacity: '1.0',
+                };
+                break;
+
+                case 'Schnelsen':
+                    return {
+                    weight: '1.04',
+                    fillColor: '#2ab1dd',
+                    color: '#000000',
+                    dashArray: '',
+                    lineCap: 'butt',
+                    lineJoin: 'miter',
+                    opacity: '1.0',
+                    fillOpacity: '1.0',
+                };
+                break;
+
+                case 'Stellingen':
+                    return {
+                    weight: '1.04',
+                    fillColor: '#5b88e1',
+                    color: '#000000',
+                    dashArray: '',
+                    lineCap: 'butt',
+                    lineJoin: 'miter',
+                    opacity: '1.0',
+                    fillOpacity: '1.0',
+                };
+                break;
+
+                case 'Süderelbmarsch':
+                    return {
+                    weight: '1.04',
+                    fillColor: '#d26bab',
+                    color: '#000000',
+                    dashArray: '',
+                    lineCap: 'butt',
+                    lineJoin: 'miter',
+                    opacity: '1.0',
+                    fillOpacity: '1.0',
+                };
+                break;
+
+                case 'Walddörfer':
+                    return {
+                    weight: '1.04',
+                    fillColor: '#75ddc8',
+                    color: '#000000',
+                    dashArray: '',
+                    lineCap: 'butt',
+                    lineJoin: 'miter',
+                    opacity: '1.0',
+                    fillOpacity: '1.0',
+                };
+                break;
+
+            }
+        }
+        var json_ortsteile0JSON = new L.geoJson(json_ortsteile0, {
+            onEachFeature: pop_ortsteile0,
+            style: doStyleortsteile0
+        });
+        layerOrder[layerOrder.length] = json_ortsteile0JSON;
+        bounds_group.addLayer(json_ortsteile0JSON);
+        initialOrder[initialOrder.length] = json_ortsteile0JSON;
+        feature_group.addLayer(json_ortsteile0JSON);
+        raster_group.addTo(map);
+        feature_group.addTo(map);
+        var osmGeocoder = new L.Control.OSMGeocoder({
+            collapsed: false,
+            position: 'topright',
+            text: 'Search',
+        });
+        osmGeocoder.addTo(map);
+        stackLayers();
+        map.on('overlayadd', restackLayers);
+        </script>
+    </body>
+</html>
