@@ -245,7 +245,7 @@
       <renderer-v2 attr="Wasserwerk" symbollevels="0" type="categorizedSymbol">
         <categories>
           <category render="true" symbol="0" value="" label=""/>
-          <category render="true" symbol="1" value="Bauersberg" label="Bauersberg"/>
+          <category render="true" symbol="1" value="Baursberg" label="Baursberg"/>
           <category render="true" symbol="2" value="Bostelbek, Neugraben, Süderelbe" label="Bostelbek, Neugraben, Süderelbe"/>
           <category render="true" symbol="3" value="Großhansdorf" label="Großhansdorf"/>
           <category render="true" symbol="4" value="Haseldorfer" label="Haseldorfer"/>
