@@ -3,9 +3,11 @@ Trinkwasser Visualisierung: Härtegrad, Bestandteile und Kosten
 
 * Im Verzeichnis src/ befinden sich die HTML, CSS und JavaScript Dateien + die aufbereiteten Daten für die Visualisierung. Nach Änderungen einfach grunt gh-pages ausführen, um die Online-Version zu aktualisieren.
 
-Online-Version: http://codeformuenster.org/trinkwasser/
+* Im Verzeichnis src/map befinden sich alle Informationen zur Karte, wir empfehlen den Export aus QGIS mittels qgis2web
+ 
+Online-Version: http://codeforhamburg.org/Trinkwasser-Hamburg
 
 Datenquellen:
 ==================
 
-* Stadtwerke Münster: https://www.stadtwerke-muenster.de/fileadmin/stwms/trinkwasser/produkte/dokumente/SWMS_Trinkwasseranalyse_2014.pdf
+* Hamburg Wasser: hhttps://www.hamburgwasser.de/wasseranalysen.html
