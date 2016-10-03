@@ -1,33 +1,33 @@
 tw.data.referenceWaters = {
-	"salvus": {
-		"natrium": 19.9,
-		"kalium": 1.1,
-		"calcium": 76,
-		"magnesium": 4,
-		"chlorid": 50,
-		"nitrat": 0,
-		"sulfat": 40,
-		"sources": ["http://www.salvus.de/produkte/salvus-mineralwasser-naturell/"]
+	"bismarck": {
+		"natrium": 10,
+		"kalium": 0,
+		"calcium": 60,
+		"magnesium": 3,
+		"chlorid": 14,
+		"nitrat": 49,
+		"sulfat": 16,
+		"sources": ["https://www.mineralienrechner.de/vergleichstabelle-gerolsteiner-mineralienrechner/352.html"]
 	},
-	"apodis": {
-		"natrium": 19,
-		"kalium": 1.3,
-		"calcium": 110.2,
-		"magnesium": 5.9,
-		"chlorid": 42,
-		"nitrat": 0,
-		"sulfat": 73,
-		"sources": ["http://www.mineralwasser-genuss.de/apodis/"]
+	"magnus": {
+		"natrium": 10,
+		"kalium": 0,
+		"calcium": 60,
+		"magnesium": 3,
+		"chlorid": 14,
+		"nitrat": 49,
+		"sulfat": 16,
+		"sources": ["https://www.mineralienrechner.de/vergleichstabelle-gerolsteiner-mineralienrechner/352.html"]
 	},
-	"sawell": {
-		"natrium": 22,
-		"kalium": 0.7,
-		"calcium": 76,
-		"magnesium": 3.8,
-		"chlorid": 52,
-		"nitrat": 0,
-		"sulfat": 52,
-		"sources": ["http://www.mineralwasser-genuss.de/sawell/"]
+	"gerolsteiner": {
+		"natrium": 12,
+		"kalium": 3,
+		"calcium": 140,
+		"magnesium": 49,
+		"chlorid": 9,
+		"nitrat": 2.74,
+		"sulfat": 20,
+		"sources": ["https://www.mineralienrechner.de/vergleichstabelle-gerolsteiner-mineralienrechner/352.html"]
 	},
 	"volvic": {
 		"natrium": 11.6,
